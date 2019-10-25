@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
     <header class="header">
@@ -18,65 +19,66 @@
 
     </header>
 
-    <div class="action">
-        <div class="action--bucket">
+    <div class="action panel">
+        <div class="panel--item">
             <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
                 <image x="0" y="0" width="24" height="24" xlink:href="img/icon-bucket.svg" />
             </svg>
-            <div class="action--bucket_text">Paint bucket</div>
+            <div class="panel--item_text">Paint bucket</div>
         </div>
 
-        <div class="action--color">
+        <div class="panel--item">
             <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
                 <image x="0" y="0" width="24" height="24" xlink:href="img/icon_choose_color.svg" />
             </svg>
-            <div class="action--color_text">Choose color</div>
+            <div class="panel--item_text">Choose color</div>
         </div>
 
-        <div class="action--move">
+        <div class="panel--item">
             <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
                 <image x="0" y="0" width="24" height="24" xlink:href="img/icon-move.svg" />
             </svg>
-            <div class="action--move_text">Move</div>
+            <div class="panel--item_text">Move</div>
         </div>
 
-        <div class="action--transform">
+        <div class="panel--item">
             <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
                 <image x="0" y="0" width="24" height="24" xlink:href="img/icon-transform.svg" />
             </svg>
-            <div class="action--transform_text">Transform</div>
+            <div class="panel--item_text">Transform</div>
         </div>
     </div>
 
-    <div class="colors">
-        <div class="colors--current">
+    <div class="colors panel">
+        <div class="panel--item">
             <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
                 <image x="0" y="0" width="20" height="20" xlink:href="img/icon-current.svg" />
             </svg>
-            <div class="colors--current_text">Current color</div>
+            <div class="panel--item_text">Current color</div>
         </div>
 
-        <div class="colors--prev">
+        <div class="panel--item">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
                     <image x="0" y="0" width="20" height="20" xlink:href="img/icon_prev.svg" />
                 </svg>
-                <div class="colors--prev_text">Previous color</div>
+                <div class="panel--item_text">Previous color</div>
         </div>
 
-        <div class="colors--red">
+        <div class="panel--item">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
                     <image x="0" y="0" width="20" height="20" xlink:href="img/icon_red.svg" />
                 </svg>
-                <div class="colors--red_text">Red</div>
+                <div class="panel--item_text">Red</div>
         </div>
 
-        <div class="colors--blue">
+        <div class="panel--item">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
                     <image x="0" y="0" width="20" height="20" xlink:href="img/icon_blue.svg" />
                 </svg>
-                <div class="colors--blue_text">Blue</div>
+                <div class="panel--item_text">Blue</div>
         </div>
-
     </div>
+
+    <canvas id="cnvs" class="canvas" height="512" width="512"></canvas>
 </body>
 </html>
