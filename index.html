@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" >
     <script src="script.js" defer></script>
+
 </head>
 <body>
     <header class="header">
@@ -84,6 +85,18 @@
         <button id="task_1" class="check_pic--button">4x4</button>
         <button id="task_2" class="check_pic--button">32x32</button>
         <button id="task_3" class="check_pic--button">Image</button>
+    </div>
+
+    <div class="scale panel">
+        <div class="panel--item scale--item">
+            <label class="" for="scale_h">Height scale: </label>
+            <input class="scale--input" id="scale_h" type="text" name="scale_h" value="512" required pattern="[0-9.]+" > 
+        </div>
+        <div class="panel--item scale--item">
+            <label class="" for="scale_w">Width scale: </label>
+            <input class="scale--input" id="scale_w" type="text" name="scale_w" value="512" required pattern="[0-9.]+" > 
+        </div>
+        <button id="scale_change">Change canvas</button>
     </div>
 
     <canvas id="cnvs" class="canvas" height="512" width="512"></canvas>
