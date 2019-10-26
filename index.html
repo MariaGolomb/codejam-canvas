@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+            <image x="0" y="0" width="40" height="40" xlink:href="img/nav_icon.svg" />
+        </svg>
+        <h1>CodeJam - Pallete</h1> 
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="24">
+            <image x="0" y="0" width="12" height="24" xlink:href="img/menu_icon.svg" />
+        </svg>
+
+    </header>
+
+    <div class="action panel">
+        <div class="panel--item">
+            <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                <image x="0" y="0" width="24" height="24" xlink:href="img/icon-bucket.svg" />
+            </svg>
+            <div class="panel--item_text">Paint bucket</div>
+        </div>
+
+        <div class="panel--item">
+            <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                <image x="0" y="0" width="24" height="24" xlink:href="img/icon_choose_color.svg" />
+            </svg>
+            <div class="panel--item_text">Choose color</div>
+        </div>
+
+        <div class="panel--item">
+            <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                <image x="0" y="0" width="24" height="24" xlink:href="img/icon-move.svg" />
+            </svg>
+            <div class="panel--item_text">Move</div>
+        </div>
+
+        <div class="panel--item">
+            <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                <image x="0" y="0" width="24" height="24" xlink:href="img/icon-transform.svg" />
+            </svg>
+            <div class="panel--item_text">Transform</div>
+        </div>
+    </div>
+
+    <div class="colors panel">
+        <div class="panel--item">
+            <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                <image x="0" y="0" width="20" height="20" xlink:href="img/icon-current.svg" />
+            </svg>
+            <div class="panel--item_text">Current color</div>
+        </div>
+
+        <div class="panel--item">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                    <image x="0" y="0" width="20" height="20" xlink:href="img/icon_prev.svg" />
+                </svg>
+                <div class="panel--item_text">Previous color</div>
+        </div>
+
+        <div class="panel--item">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                    <image x="0" y="0" width="20" height="20" xlink:href="img/icon_red.svg" />
+                </svg>
+                <div class="panel--item_text">Red</div>
+        </div>
+
+        <div class="panel--item">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                    <image x="0" y="0" width="20" height="20" xlink:href="img/icon_blue.svg" />
+                </svg>
+                <div class="panel--item_text">Blue</div>
+        </div>
+    </div>
+
+    <div class="check_pic panel">
+        <button id="task_1" class="check_pic--button">4x4</button>
+        <button id="task_2" class="check_pic--button">32x32</button>
+        <button id="task_3" class="check_pic--button">Image</button>
+    </div>
+
+    <div class="scale panel">
+        <div class="panel--item scale--item">
+            <label class="" for="scale_h">Height scale: </label>
+            <input class="scale--input" id="scale_h" type="text" name="scale_h" value="512" required pattern="[0-9.]+" > 
+        </div>
+        <div class="panel--item scale--item">
+            <label class="" for="scale_w">Width scale: </label>
+            <input class="scale--input" id="scale_w" type="text" name="scale_w" value="512" required pattern="[0-9.]+" > 
+        </div>
+        <button id="scale_change">Change canvas</button>
+    </div>
+
+    <canvas id="cnvs" class="canvas" height="512" width="512"></canvas>
+</body>
+</html>
